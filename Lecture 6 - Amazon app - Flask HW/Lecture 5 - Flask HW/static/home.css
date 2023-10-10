@@ -1,0 +1,156 @@
+body {
+    background-color: black;
+    color: purple;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    position: relative;
+}
+
+.card {
+    border: 1px solid #eee;
+    margin: 10px;
+    background-color: black;
+    color: purple;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.card-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.card-text.price {
+    font-size: 24px;
+    color: #ff5722;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: purple;
+    color: black;
+    border: 2px solid purple;
+    padding: 12px 24px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    position: relative;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: purple;
+    color: black;
+}
+
+.btn-primary::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, black, purple);
+    opacity: 0;
+    transition: width 0.3s, opacity 0.3s;
+}
+
+.btn-primary:hover::before {
+    width: 100%;
+    opacity: 1;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 208, 0.5);
+}
+
+.btn-primary:disabled {
+    background-color: purple;
+    color: black;
+    border-color: purple;
+}
+
+.view-cart-button {
+    position: fixed;
+    top: 20px;
+    right: 45px;
+    background-color: black;
+    color: purple;
+    border: 2px solid purple;
+    padding: 8px 16px;
+    font-size: 20px;
+    font-family: Arial, sans-serif; 
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.view-cart-button:hover {
+    background-color: black;
+    color: purple;
+}
+
+.view-cart-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, purple, black);
+    opacity: 0;
+    transition: width 0.3s, opacity 0.3s;
+}
+
+.view-cart-button:hover::before {
+    width: 100%;
+    opacity: 1;
+}
+
+.view-cart-button:focus,
+.view-cart-button.focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 187, 0.5);
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.col-md-4 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.card-body {
+    padding: 20px;
+}

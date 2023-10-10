@@ -1,0 +1,142 @@
+body {
+    background-color: black;
+    color: purple;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .welcome-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .custom-logo {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .btn-signup {
+    color: black;
+    background-color: purple;
+    border: 2px solid ;
+    padding: 15px 30px;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    position: relative;
+  }
+  
+  .btn-signup:hover {
+    background-color: purple;
+    color: black;
+  }
+  
+  .btn-signup::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, black, purple);
+    opacity: 0;
+    transition: width 0.3s, opacity 0.3s;
+    border-radius: 50px;
+  }
+  
+  .btn-signup:hover::before {
+    width: 100%;
+    opacity: 1;
+  }
+  
+  .btn-signup:focus,
+  .btn-signup.focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 191, 0.5);
+  }
+  
+  .btn-signup.disabled,
+  .btn-signup:disabled {
+    background-color: purple;
+    color: black;
+    border-color: purple;
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-weight: 300; /* Lighter font weight */
+    color: white;
+  }
+  
+  p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .login-icon {
+    font-size: 24px;
+  }
+  
+  .btn-login {
+    color: purple;
+    background-color: black;
+    border: 2px solid purple;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    position: relative;
+  }
+  
+  .btn-login:hover {
+    background-color: black;
+    color: purple;
+  }
+  
+  .btn-login::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, purple, black);
+    opacity: 0;
+    transition: width 0.3s, opacity 0.3s;
+    border-radius: 50px;
+  }
+  
+  .btn-login:hover::before {
+    width: 100%;
+    opacity: 1;
+  }
+  
+  .btn-login:focus,
+  .btn-login.focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 208, 0.5);
+  }
+  
+  .btn-login.disabled,
+  .btn-login:disabled {
+    background-color: black;
+    color: purple;
+    border-color: purple;
+  }
+  
+  .login-container {
+    margin-top: 20px;
+  }
+  

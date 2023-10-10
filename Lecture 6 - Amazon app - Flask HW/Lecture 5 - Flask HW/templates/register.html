@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/authentication.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Register</h1>
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                <label class="form-label">{{ form.username.label }}</label>
+                {{ form.username() }}
+            </div>
+            <div class="form-group">
+                <label class="form-label">{{ form.password.label }}</label>
+                {{ form.password() }}
+            </div>
+            <div class="form-group">
+                <label class="form-label">{{ form.email.label }}</label>
+                {{ form.email() }}
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-register">Register</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

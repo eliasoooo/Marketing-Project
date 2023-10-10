@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Welcome to Tobii</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="static/welcome.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Styling for the welcome container */
+      .welcome-container {
+        text-align: center;
+        padding: 50px 0;
+      }
+
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      /* Styling for the "Why Choose Tobii?" section */
+      .why-choose-tobii {
+        text-align: left;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Styling for the embedded video */
+      iframe {
+        width: 100%;
+        height: 400px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container welcome-container">
+      <h1>Welcome to Tobii</h1>
+      <p>Empowering Accessibility Through Eye Tracking Technology</p>
+      <div class="buttons">
+        <a
+          class="btn btn-primary btn-lg"
+          href="{{ url_for('register') }}"
+          role="button"
+          >Sign Up</a
+        >
+        <a
+          class="btn btn-secondary btn-lg"
+          href="{{ url_for('login') }}"
+          role="button"
+          >Login</a
+        >
+      </div>
+    </div>
+
+    <!-- Why Choose Tobii? Section -->
+    <div class="container why-choose-tobii">
+      <h2>Why Choose Tobii?</h2>
+      <p>
+        Precision and Accuracy: Our technology ensures seamless interaction with
+        computers, tablets, and communication devices.
+      </p>
+      <p>
+        Empowering Communication: Tobii's devices offer a voice to those who may
+        have difficulty speaking, allowing them to express their thoughts and
+        emotions effortlessly.
+      </p>
+      <p>
+        Enhanced Accessibility: We are committed to making the digital world
+        accessible to everyone, from assistive communication to gaming.
+      </p>
+      <p>
+        Support and Community: Beyond the products, Tobii is a community. We
+        provide comprehensive support and resources to help individuals,
+        caregivers, and professionals make the most of our technology.
+      </p>
+    </div>
+
+    <!-- Embed the video using an iframe -->
+    <div class="container">
+      <h2>Explore Our Products</h2>
+      <iframe
+        src="http://tobii.23video.com/tobii-pro-fusion-eye-tracker-for"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

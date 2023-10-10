@@ -1,0 +1,162 @@
+
+    body {
+        background-color: #222;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: purple;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(255, 0, 170, 0.5);
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-label {
+        font-size: 18px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        border: 2px solid purple;
+        border-radius: 5px;
+        color: #333;
+        background-color: #fff;
+    }
+
+    .btn-primary,
+    .btn-warning,
+    .btn-danger,
+    .btn-secondary {
+        color: black;
+        background-color: purple;
+        border: 2px solid purple;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 50px;
+        transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+        margin-top: 10px;
+        position: relative;
+    }
+
+    .btn-primary:hover,
+    .btn-warning:hover,
+    .btn-danger:hover,
+    .btn-secondary:hover {
+        background-color: purple;
+        color: black;
+    }
+
+    .btn-primary::before,
+    .btn-warning::before,
+    .btn-danger::before,
+    .btn-secondary::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: linear-gradient(to right, black, purple);
+        opacity: 0;
+        transition: width 0.3s, opacity 0.3s;
+        border-radius: 50px;
+    }
+
+    .btn-primary:hover::before,
+    .btn-warning:hover::before,
+    .btn-danger:hover::before,
+    .btn-secondary:hover::before {
+        width: 100%;
+        opacity: 1;
+    }
+
+    .btn-primary:focus,
+    .btn-warning:focus,
+    .btn-danger:focus,
+    .btn-secondary:focus,
+    .btn-primary.focus,
+    .btn-warning.focus,
+    .btn-danger.focus,
+    .btn-secondary.focus {
+        box-shadow: 0 0 0 0.2rem rgba(255, 0, 179, 0.5);
+    }
+
+    .btn-primary:disabled,
+    .btn-warning:disabled,
+    .btn-danger:disabled,
+    .btn-secondary:disabled {
+        background-color: purple;
+        color: black;
+        border-color: purple;
+    }
+
+    .list-group-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        color: purple;
+    }
+
+    .list-group-item a {
+        color: purple;
+        text-decoration: none;
+    }
+
+    .list-group-item a:hover {
+        text-decoration: underline;
+    }
+
+    /* Improved button visibility for Edit and Delete buttons */
+    .btn-edit {
+        color: purple;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 2px solid purple;
+        padding: 5px 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-right: 5px;
+    }
+
+    .btn-edit:hover {
+        background-color: purple;
+        color: black;
+    }
+
+    .btn-delete {
+        color: purple;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 2px solid purple;
+        padding: 5px 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .btn-delete:hover {
+        background-color: purple;
+        color: black;
+    }
